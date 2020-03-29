@@ -1,0 +1,306 @@
+{
+    "workbench.colorCustomizations": {
+        "editor.background": "#000000",
+        "editor.foreground": "#ffffff",
+        "activityBar.background": "#000000",
+        "titleBar.activeBackground": "#000000",
+        "titleBar.inactiveBackground": "#000000",
+        "titleBar.activeForeground": "#F9F9FE",
+        "sideBar.background": "#000000",
+        "editorInfo.border": "#000000",
+        "statusBar.border": "#000000",
+        "tab.activeBackground": "#000000",
+        "tab.inactiveBackground": "#000000", //171b22
+        "tab.unfocusedActiveBackground": "#010611",
+        "tab.activeBorder": "#00ffe5",
+        "tab.border": "#010611",
+        "editorGroupHeader.noTabsBackground":"#010611",
+        "workbench.editor.showTabs": false,
+        "editorGroupHeader.tabsBackground":"#000000", // fuck
+        "editor.lineHighlightBackground": "#000713",
+        "editor.selectionBackground":"#000d29",
+        "tab.activeModifiedBorder": "#010611", // 060e1d
+        "statusBar.background": "#000000", // #01050f
+
+        /*"activityBar.border": "#18161d",
+        "statusBar.border": "#18161d",
+        "editorGroup.border": "#18161d",
+        "titleBar.border": "#18161d",
+        "sideBar.border": "#18161d",*/
+        "activityBar.activeBorder": "#0077ff",
+        "terminal.background": "#000000",
+        /*
+        "terminal.foreground": "#eceaea",
+        "terminal.ansiBlack":"#1D2021",
+        "terminal.ansiBlue":"#0D6678",
+        "terminal.ansiBrightBlack":"#665C54",
+        "terminal.ansiBrightBlue":"#fc80fc",
+        "terminal.ansiBrightCyan":"#8BA59B",
+        "terminal.ansiBrightGreen":"#ffd92e",
+        "terminal.ansiBrightMagenta":"#8F4673",
+        "terminal.ansiBrightRed":"#FB543F",
+        "terminal.ansiBrightWhite":"#FDF4C1",
+        "terminal.ansiBrightYellow":"#FAC03B",
+        "terminal.ansiCyan":"#8BA59B",
+        "terminal.ansiGreen":"#6acf0c",
+        "terminal.ansiMagenta":"#8F4673",
+        "terminal.ansiRed":"#FB543F",
+        "terminal.ansiWhite":"#A89984",
+        "terminal.ansiYellow":"#FAC03B",
+        */
+        "sideBar.foreground": "#5f7a87",
+        "sideBarSectionHeader.background": "#000000",
+        "sideBarSectionHeader.border": "#00000060",
+        "sideBarTitle.foreground": "#eeffff",
+
+        "list.activeSelectionBackground": "#090b10",
+        "list.activeSelectionForeground": "#80cbc4",
+        "list.dropBackground": "#f0717880",
+        "list.focusBackground": "#a6accd20",
+        "list.focusForeground": "#a6accd",
+        "list.highlightForeground": "#80cbc4",
+        "list.hoverBackground": "#090b10dc",
+        "list.hoverForeground": "#ffffff",
+        "list.inactiveSelectionBackground": "#00000030",
+        "list.inactiveSelectionForeground": "#00ffe5",
+        "listFilterWidget.background": "#00000030",
+        "listFilterWidget.noMatchesOutline": "#00000030",
+
+
+    },
+    "files.associations": {
+      "string.h": "c",
+      "iostream": "cpp",
+      "cmath": "cpp",
+      "ostream": "cpp",
+      "chrono": "cpp",
+      "bitset": "cpp",
+      "iosfwd": "cpp",
+      "iomanip": "cpp",
+      "algorithm": "cpp",
+      "random": "c",
+      "getopt.h": "c",
+      "stdio.h": "c",
+      "helpers.h": "c",
+      "stdbool.h": "c",
+      "cstdbool": "c",
+      "c++config.h": "c",
+      "os_defines.h": "c",
+      "cs50.h": "c",
+      "array": "cpp",
+      "atomic": "cpp",
+      "*.tcc": "cpp",
+      "cctype": "cpp",
+      "cfenv": "cpp",
+      "cinttypes": "cpp",
+      "clocale": "cpp",
+      "codecvt": "cpp",
+      "complex": "cpp",
+      "condition_variable": "cpp",
+      "csetjmp": "cpp",
+      "csignal": "cpp",
+      "cstdarg": "cpp",
+      "cstddef": "cpp",
+      "cstdint": "cpp",
+      "cstdio": "cpp",
+      "cstdlib": "cpp",
+      "cstring": "cpp",
+      "ctime": "cpp",
+      "cuchar": "cpp",
+      "cwchar": "cpp",
+      "cwctype": "cpp",
+      "deque": "cpp",
+      "forward_list": "cpp",
+      "list": "cpp",
+      "unordered_map": "cpp",
+      "unordered_set": "cpp",
+      "vector": "cpp",
+      "exception": "cpp",
+      "functional": "cpp",
+      "iterator": "cpp",
+      "map": "cpp",
+      "memory": "cpp",
+      "memory_resource": "cpp",
+      "numeric": "cpp",
+      "optional": "cpp",
+      "ratio": "cpp",
+      "regex": "cpp",
+      "set": "cpp",
+      "string": "cpp",
+      "string_view": "cpp",
+      "system_error": "cpp",
+      "tuple": "cpp",
+      "type_traits": "cpp",
+      "utility": "cpp",
+      "fstream": "cpp",
+      "future": "cpp",
+      "initializer_list": "cpp",
+      "istream": "cpp",
+      "limits": "cpp",
+      "mutex": "cpp",
+      "new": "cpp",
+      "scoped_allocator": "cpp",
+      "shared_mutex": "cpp",
+      "sstream": "cpp",
+      "stdexcept": "cpp",
+      "streambuf": "cpp",
+      "thread": "cpp",
+      "typeindex": "cpp",
+      "typeinfo": "cpp",
+      "valarray": "cpp"
+    },
+    "editor.fontFamily": "Consolas", //Consolas , mononoki
+    "editor.letterSpacing": 0,
+    "editor.lineHeight": 20,
+    "editor.fontLigatures": true,
+    "editor.fontSize": 16,
+    "editor.fontWeight": "500",
+    "terminal.integrated.fontFamily": "Ubuntu mono",
+    "terminal.integrated.fontSize": 15,
+    "window.titleBarStyle": "custom",
+    "window.doubleClickIconToClose": true,
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "window.zoomLevel": -1,
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": true,
+    "workbench.statusBar.visible": true,
+    "breadcrumbs.enabled": true,
+    "C_Cpp.updateChannel": "Insiders",
+
+    "editor.tokenColorCustomizations": {
+        "comments": "#ffffff8c",
+        "keywords": "#e56afd",
+        "functions": "#70eaff",
+        "variables": "#ff6868",
+        "types": "#c8ff00",
+        "strings": "#a1ff62",
+        "numbers": "#ffcb3c",
+        "textMateRules": [
+          {
+            "scope": [
+              "entity.name.type.class", //class names, struct , string
+            ],
+            "settings": {
+              "foreground": "#c8f009",
+            }
+          },        {
+          "scope": [
+            //following will be in italic (=FlottFlott)
+            "comment",
+            "entity.name.type.class", //class names
+            "keyword", //import, export, return…
+            "constant", //String, Number, Boolean…, this, super
+            "storage.modifier", //static keyword
+            "storage.type.class.js", //class keyword
+          ],
+          "settings": {
+            "fontStyle": "italic",
+          }
+        },
+
+        {
+          "scope": [
+            //following will be excluded from italics (VSCode has some defaults for italics)
+            "invalid",
+            "keyword.operator",
+            "constant.numeric.css",
+            "keyword.other.unit.px.css",
+            "constant.numeric.decimal.js",
+            "constant.numeric.json"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        },
+        // >>>>>>> HTML & CSS Configuration <<<<<<<
+        {
+          "scope": [
+            "entity.name.tag"
+          ],
+          "settings": {
+            "foreground": "#3bb1ff",
+          }  
+        },
+        {
+          "scope": [
+            "entity.other.attribute-name",
+          ],
+          "settings": {
+            "foreground": "#ffb42a",
+          }
+        },
+        {
+          "scope":"string.quoted.double.html",
+          "settings": {
+            "foreground": "#2aff71",
+          }
+        },
+        {
+          "scope": [
+            "constant.numeric.css",
+            "support.type.property-name.css",
+            "support.constant.property-value.css",
+            "constant.other.color.rgb-value.hex.css",
+            "support.constant.font-name.css",
+          ],
+          "settings": {
+            "foreground": "#fd4545",
+          }
+        },
+        {
+          "scope": "entity.other.attribute-name.class.css",
+          "settings": {
+            "foreground": "#f6a000",
+          }
+        },
+        {
+          "scope" : [
+            "support.type.property-name.css",
+            
+          ],
+          "settings": {
+            "foreground": "#e56afd",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope":[
+            "keyword.other.unit.px.css",
+
+          ],
+          "settings": {
+            "foreground": "#ffffff",//AAB1C0 punctuation.section.block.end.bracket.curly.java
+          }
+        },
+        {
+          "scope":[
+            "meta.method.body.java",
+          ],
+          "settings": {
+            "foreground": "#FF6868",
+          }
+        },
+        {
+          "scope":[
+            "punctuation.section.block.end.bracket.curly.java",
+            "punctuation.section.block.begin.bracket.curly.java",
+            "punctuation.bracket.square.java",
+            "punctuation.bracket.round.java",
+          ],
+          "settings": {
+            "foreground": "#bdc3cf",
+          }
+        },
+        {
+          "scope": "source.python",
+          "settings": {
+            "foreground": "#ffffff",
+          }
+        }
+
+          ]
+        },
+        "python.pythonPath": "/usr/bin/python",
+        "java.home": "/usr/lib/jvm/java-1.11.0-openjdk-amd64",      
+}

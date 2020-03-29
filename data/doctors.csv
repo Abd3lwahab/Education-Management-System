@@ -1,0 +1,10 @@
+id,username,fullname,email,hashpassword,coursescode
+415000,Shea,Coby Potter,sit@dis.ca,c1e25009e07713e0077ad355d5ec5b4fed8e1a078e5f066c443f519fc88ed205,CS100,CS120,CS140
+415001,Elizabeth,Wallace Ramirez,aliquet.molestie@etnetuset.ca,248715109e6a2d0c23343a5dda82be162326e4715ec69bb8f24755848739d910,CS121,CS141,CS201
+415002,Julian,Cody Ashley,Cras.pellentesque@sapiencursus.ca,90a5d5a8573d7f52021a85d65d98f44c58a2006b9532204039206705a4d31f80,CS102,CS202
+415003,Raphael,Lysandra Lawrence,tempus.mauris@lacusUt.org,053e9c5f1a29bea66ff896d7a8f217bf380b8e3973e7f13c1acbe14ef7fc947e,CS103,CS183
+415004,Gannon,Sierra Duran,Morbi@velarcuCurabitur.org,628c1e96932b615cdb96172c52296d7b4ae760ab2ced7d3655a1af600d3818d9,CS104,CS184
+415005,Nicole,Dalton Ramirez,ante@arcu.com,e03112b3005d969f7623b240ef9d385c5c0e078ede08720f66e78c85ad73f3a3,CS160,CS204
+415006,Sasha,Amethyst Strong,amet@quisdiam.ca,fabcad3f11442896070a804f5a6fa6c929d6f60bf17aba0c218f75dfb94c8bee,CS106,CS146
+415007,Calista,Lillian Walsh,euismod.et.commodo@nisi.co.uk,28d0bfec9c909c4d439cfd020148800970056793d6a46e02de5e2a8a3e951b19,CS164
+415008,Xavier,Dean Nieves,turpis.Aliquam@Inornare.edu,a350091b19d64b70d486e50c1e4b4cacce1b1efc701a255eeba0cd9639301cb5,CS108,CS142
