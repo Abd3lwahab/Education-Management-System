@@ -2,14 +2,7 @@
 
 vector <shared_ptr <Course>> courses;
 
-void listCourses(vector <shared_ptr <Course>> myCourses) {
-    cout << '\n';
-     for (int i = 0; i < myCourses.size(); i++) {
-        cout<< "["<< i + 1<< "] Course: "<<  myCourses[i]->title  << ", Code: " 
-            << myCourses[i]->code << "\n";
-    }   
-}
-
+// Create new course
 void createCourse(shared_ptr <Doctor> thisDoctor)
 {
     shared_ptr <Course> newCourse (new Course);
@@ -29,6 +22,16 @@ void createCourse(shared_ptr <Doctor> thisDoctor)
     cout << "Course created successfully\n";
 }
 
+// List courses of this doctor
+void listCourses(vector <shared_ptr <Course>> myCourses) {
+    cout << '\n';
+    for (int i = 0; i < myCourses.size(); i++) {
+        cout<< "["<< i + 1<< "] Course: "<<  myCourses[i]->title  << ", Code: " 
+            << myCourses[i]->code << "\n";
+    }
+}
+
+// Return index of which course want to viewd
 int viewCourse(vector <shared_ptr <Course>> myCourses) {
     listCourses(myCourses);
 
@@ -38,6 +41,7 @@ int viewCourse(vector <shared_ptr <Course>> myCourses) {
     return courseIndex - 1;
 }
 
+// Register course for this student
 void registerCourses(shared_ptr <Student> thisStudent) {
     vector <shared_ptr <Course>> unregistedCourses = getUnregistedCourses(thisStudent->courses);
 
@@ -56,6 +60,7 @@ void registerCourses(shared_ptr <Student> thisStudent) {
     cout << "Course registered successfully\n";
 }
 
+// Get vector of courses and return the rest of courses
 vector <shared_ptr <Course>> getUnregistedCourses(vector <shared_ptr <Course>> registedCourses) {
     vector <shared_ptr <Course>> unregistedCourses;
 
@@ -74,7 +79,7 @@ vector <shared_ptr <Course>> getUnregistedCourses(vector <shared_ptr <Course>> r
     return unregistedCourses;
 }
 
-
+// Unregister course for this student
 void unregisterCourse(shared_ptr <Student> thisStudent, int courseIndex) {
     int allCourseIndex, thisStudentIndex;
     bool found = false;
@@ -91,8 +96,10 @@ void unregisterCourse(shared_ptr <Student> thisStudent, int courseIndex) {
         }
         if (found) break;
     }
-
+    // Remove this student from course registered students vector
     courses[allCourseIndex]->registeredStudents.erase(courses[allCourseIndex]->registeredStudents.begin() + thisStudentIndex);
+    
+    // Remove this course from student courses
     thisStudent->courses.erase(thisStudent->courses.begin() + courseIndex);
 
     cout << "Course unregistered successfully\n";
@@ -101,14 +108,15 @@ void unregisterCourse(shared_ptr <Student> thisStudent, int courseIndex) {
 void deleteCourse(shared_ptr <Course> thisCourse) {
     for (int i = 0; i < courses.size(); i++) {
         if (courses[i] == thisCourse) {
-            // Delete course from doctor 
+            // Delete course from doctor courses
             for (int j = 0; j < thisCourse->lecturer->courses.size(); j++) {
                 if (thisCourse->lecturer->courses[j] == thisCourse) {
                     thisCourse->lecturer->courses.erase(thisCourse->lecturer->courses.begin() + j);
                     break;
                 }
             }
-            // Delete course from students
+
+            // Delete course from each registered students
             for (auto student : thisCourse->registeredStudents) {
                 // Delete course from each student courses vevtor
                 for (int j = 0; j < student->courses.size(); j++) {
@@ -117,6 +125,7 @@ void deleteCourse(shared_ptr <Course> thisCourse) {
                         break;
                     }
                 }
+
                 // Delete all assignment solution from each student on this Course
                 for (int j = 0; j < student->assignmentSolutions.size(); j++) {
                     if (student->assignmentSolutions[j]->assignment->course == thisCourse) {
@@ -125,6 +134,7 @@ void deleteCourse(shared_ptr <Course> thisCourse) {
                     }
                 }
             }
+            
             // Delete all assignment on this course
             while (thisCourse->assignments.size()){
                 thisCourse->assignments.pop_back();

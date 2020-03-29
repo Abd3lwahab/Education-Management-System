@@ -1,5 +1,6 @@
 #include "assignments.h"
 
+// Create new assignment
 void createAssignment(shared_ptr <Course> thisCourse) {
     shared_ptr <Assignment> newAssignment (new Assignment);
 
