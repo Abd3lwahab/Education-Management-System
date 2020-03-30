@@ -1,6 +1,9 @@
 #ifndef AUTHENTICATION_H
 #define AUTHENTICATION_H
 
+#include <termios.h>
+#include <unistd.h>
+
 #include "doctor.h"
 #include "student.h"
 #include "./sha256/sha256.h"
@@ -8,6 +11,7 @@
 
 void signUp(int role);
 void signIn(int role);
+string getPassword();
 
 void loginMenu(int role, string username);
 

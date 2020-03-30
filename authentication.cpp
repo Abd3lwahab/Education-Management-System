@@ -15,7 +15,7 @@ void signUp(int role) {
 	cin >> info.username;
 
 	cout << "Password: ";
-	cin >> password;
+	password = getPassword();
 
     info.id = createID(role);
     info.hashpassword = sha256(password);
@@ -44,7 +44,7 @@ void signIn(int role) {
 	cin >> username;
 
 	cout << "Password: ";
-	cin >> password;
+	password = getPassword();
 
     // Verify username and password
     if (role == 1 && verifyDoctorData(username, password)) {
@@ -85,4 +85,26 @@ void loginMenu(int role, string username) {
 		doctorMenu(getPointerDoctor(getIndex(role, username)));
 	else if (role == 2) 
 		studentMenu(getPointerStudent(getIndex(role, username)));
+}
+
+// Prevent display password on the screen
+// It works correctly on Linux not tested on Windows
+string getPassword()
+{
+    // Clear previously entered
+    cin.ignore();
+    cin .clear();
+
+    termios oldt;
+    tcgetattr(STDIN_FILENO, &oldt);
+    termios newt = oldt;
+    newt.c_lflag &= ~ECHO;
+    tcsetattr(STDIN_FILENO, TCSANOW, &newt);
+
+    string password;
+    getline(cin, password);
+
+    tcsetattr(STDIN_FILENO, TCSANOW, &oldt);
+    
+    return password;
 }
