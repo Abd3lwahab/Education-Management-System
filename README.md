@@ -22,7 +22,7 @@ If you choose load data, it will load data from CSV files in dictionary /data
 
 #### Choose which you want to login as 
 ![IMG02](https://i.imgur.com/PSeEqkf.png)  
-Each one has a different operations
+Each one (Doctor, Student) has a different operations
 
 #### login with existing user  
 ![IMG03](https://i.imgur.com/dLQE5kD.png)  
