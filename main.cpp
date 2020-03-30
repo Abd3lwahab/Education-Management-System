@@ -2,7 +2,7 @@
 #include "authentication.h"
 
 int main() {
-	cout <<"* Welcome in Educational Management System Project *\n";
+	cout <<"\n* Welcome in Educational Management System Project *\n";
 
 	startMethod();
 	mainMenu();
