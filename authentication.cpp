@@ -39,6 +39,7 @@ void signUp(int role) {
 
 void signIn(int role) {
     string username, password;
+	cout << "\nPlease enter the following information:\n";
 
 	cout << "Username: ";
 	cin >> username;
@@ -80,7 +81,7 @@ bool verifyStudentData(string username, string password) {
 
 // Show login menu for cuurent user
 void loginMenu(int role, string username) {
-    cout << "\nWelcome " << username << " you are logged in\n";
+    cout << "\n\nWelcome " << username << " you are logged in\n";
 	if (role == 1) 
 		doctorMenu(getPointerDoctor(getIndex(role, username)));
 	else if (role == 2) 
