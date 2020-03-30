@@ -33,7 +33,7 @@ After login, you have full access to your data and can perform different operati
 You can perform different operations (eg: Unregister course, Show assignments, Submit solution)
 
 #### Save changes
-![IMG05](https://i.imgur.com/RKtc0KG.png)  
+![IMG05](https://i.imgur.com/aNUkxmW.png)  
 If you choose save data, it will save data in CSV files in dictionary /data
 
 
