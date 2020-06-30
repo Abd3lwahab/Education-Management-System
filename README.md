@@ -34,7 +34,7 @@ You can perform different operations (eg: Unregister course, Show assignments, S
 
 #### Save changes
 ![IMG05](https://i.imgur.com/RKtc0KG.png)  
-If you choose save data, it will save data in CSV files in dictionary /data
+If you choose save data, it will save data in CSV files in dictionary/data
 
 
 ## Contributing
